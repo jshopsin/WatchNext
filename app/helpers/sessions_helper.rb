@@ -9,7 +9,7 @@ def logged_in?
 end
 
 def login
-  session[:id] = current_user.user.id
+  session[:id] = current_user.id
 end
 
 def logout
