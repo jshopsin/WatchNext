@@ -1,0 +1,12 @@
+<div class="nav-bar">
+  <% if !logged_in? %>
+    <a href="/sessions/new">Login</a> |
+    <a href="/users/new">Register</a>
+  <% else %>
+    <%= current_user.username %> |
+    <form class="logout" method="post" action="/sessions">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" name="logout" value="Logout">
+    </form>
+  <% end %>
+</div>

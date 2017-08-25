@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h2>Login</h2>
+
+  <%= erb :"_errors" %>
+
+  <form class="login" method="post" action="/sessions/new">
+    <label>Email:</label>
+    <br>
+    <input type="email" name="email">
+    <br>
+    <br>
+    <label>Password:</label>
+    <br>
+    <input type="password" name="password">
+    <br>
+    <br>
+    <input type="submit" name="login" value="Login">
+  </form>
+
+</div>
